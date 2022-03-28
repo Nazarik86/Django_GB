@@ -2,7 +2,7 @@ import json
 import os
 
 from django.core.management.base import BaseCommand
-from authapp.models import ShopUser
+
 from mainapp.models import ProductCategory, Product
 
 JSON_PATH = 'mainapp/json'
@@ -27,9 +27,7 @@ class Command(BaseCommand):
         Product.objects.all().delete()
         for product in products:
             category_name = product['category']
-            category = ProductCategory.objects.get(name=category_name)
-            product['category'] = category
-            new_product = Product(**product)
-            new_product.save()
-
-ShopUser.objects.create_superuser('admin', 'admin@localhost', 'admin', age=25)
+            _category = ProductCategory.objects.get(name=category_name)
+            product['category'] = _category
+            new_prod = Product(**product)
+            new_prod.save()

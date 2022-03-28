@@ -76,18 +76,40 @@ html, body {
 	width: 23px;
 	height: 23px;	
 	background-image: url(img/search.png);
-	position: absolute;
+	background-repeat: no-repeat;
+	/*position: absolute;*/
+	margin-left: 30px;
 	top: 63px;
 	left: 1176px;
 }
-.basket {
+.menu .basket {
 	display: block;
 	width: 23px;
-	height: 23px;	
+	height: 23px;
 	background-image: url(img/basket.png);
-	position: absolute;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	padding-right: 0;
+	/*position: absolute;*/
 	top: 63px;
-	left: 1210px;
+	left: 1230px;
+}
+.basket_summary {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.basket_record {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.li_basket_count {
+	padding-left: 1px;
+	color: #8c8c8c;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: right;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .clearfix:after {
@@ -353,7 +375,7 @@ html, body {
 }
 .title h2 {
 	float: left;
-	margin-top: 118px;
+	margin-top: 20px;
 	color:  #212121;
 	font-size: 36px;
 	font-weight: 700;
@@ -855,7 +877,7 @@ td:first-child {
 	height: 70px;
 	background-color: #f4f4f4;
 	position: relative;
-	padding-left: 360px;
+	padding-left: 470px;
 }
 .links-menu {
 	margin:	27px auto 0px;	
@@ -1012,14 +1034,14 @@ td:first-child {
 	padding: 0px 98px;
 }
 .related .title {
-	height: 343px;
+	height: 150px;
 	margin-right: 0;
 }
 .related .title h2 {
-	margin-top: 245px;
+	margin-top: 20px;
 }
 .related .title .explore {
-	margin-top: 262px;
+	margin-top: 20px;
 }
 .related-products {
 	margin-bottom: 120px;
@@ -1069,4 +1091,9 @@ td:first-child {
 }
 .related-products a:hover .text{
 	display: block;
+}
+
+.list_of_prod {
+	width: 300px;
+	height: 300px;
 }
